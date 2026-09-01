@@ -118,3 +118,152 @@
     [action] => affiche
 )
 
+01-09-2026 17:11:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:19 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+01-09-2026 17:11:55 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+01-09-2026 17:11:58 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_home
+)
+
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:12:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+01-09-2026 17:33:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:01 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_home
+)
+
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : POST
+01-09-2026 17:33:04 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
