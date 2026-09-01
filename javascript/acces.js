@@ -1,0 +1,99 @@
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/javascript.js to edit this template
+ */
+
+var g_acces;
+
+class C_Acces {
+    constructor () {
+        this.div_accueil_fonction_liste_course = "";
+    }
+    
+    affiche() {
+        $('#DIV_ACCUEIL').html("Chargement en cours");
+        var json = {
+            domaine: 'acces',
+            action: 'affiche'
+        };
+        $.ajax(
+                {
+                    type: 'POST',
+                    url: g_chemin_ajax + 'ajax.php',
+                    data: json,
+                    dataType: 'html',
+                    async: 'false',
+                    success: function (html) {
+                        g_acces.affiche_retour(html);
+                    }
+                }
+        );
+    }
+
+    affiche_retour(html) {
+        $('#DIV_ACCUEIL').html(html);
+        g_acces.ecoute_evenements_acces();
+    }
+    
+    ecoute_evenements_acces() {
+        $('#FRM_ACCES_SUBMIT').click(function (e) {
+            g_acces.div_accueil_fonction_liste_course = "#DIV_FONCTION_LISTE_COURSES";
+            var donnees = $('#FRM_ACCES').serializeArray();
+            g_acces.traite_acces(donnees);
+            e.preventDefault();
+        });
+        $('#FRM_ACCES_SUBMIT_MOBILE').click(function (e) {
+            g_acces.div_accueil_fonction_liste_course = "#DIV_ACCUEIL";
+            var donnees = $('#FRM_ACCES').serializeArray();
+            g_acces.traite_acces_mobile(donnees);
+            e.preventDefault();
+        });
+    }
+    
+    traite_acces = function (donnees) {
+    var json = {
+        domaine: 'acces',
+        action: 'controle',
+        donnees: donnees
+    };
+    $.ajax(
+            {
+                type: 'POST',
+                url: g_chemin_ajax + 'ajax.php',
+                data: json,
+                dataType: 'json',
+                success: function (data) {
+                    if (data.erreur === "non") {
+                        g_accueil = new C_Accueil();
+                        g_accueil.affiche();
+                    } else {
+                        document.getElementById('MDL_ACCES').style.display='block';
+                    }
+                }
+            });
+    };
+    
+    traite_acces_mobile = function (donnees) {
+        
+    var json = {
+        domaine: 'acces',
+        action: 'controle',
+        donnees: donnees
+    };
+    $.ajax(
+            {
+                type: 'POST',
+                url: g_chemin_ajax + 'ajax.php',
+                data: json,
+                dataType: 'json',
+                success: function (data) {
+                    if (data.erreur === "non") {
+                        g_liste_courses = new C_ListeCourses();
+                        g_liste_courses.affiche();
+                    } else {
+                        document.getElementById('MDL_ACCES').style.display='block';
+                    }
+                }
+            });
+    };
+}

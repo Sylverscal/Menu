@@ -1,0 +1,36 @@
+#TBL_LISTE_COURSES tr {
+    padding: 1px
+}
+
+input.CBX_COURSE_FAITE {
+    width: 20px;
+    height: 20px;
+}
+
+#DIV_ACCUEIL {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#DIV_VUE_PRINCIPALE {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+td.TD_COURSE {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.centre-bouton {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
