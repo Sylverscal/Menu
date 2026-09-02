@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AJAX de LISTE DE COURSES : MklAnj
+ * AJAX de MENU : Menu
  */
 
 include_once $_SERVER['DOCUMENT_ROOT'] . "/classes/CLA_inclusions.php";
@@ -26,11 +26,11 @@ $domaine = $_POST['domaine'];
 $nomClasse = "CLA_" . $domaine . "_Ajax";
 $tests = new $nomClasse($_POST);
 
-abstract class AJX_MklAnj_Ajax {
+abstract class AJX_Ajax {
 
     function __construct($post) {
         global $CXO;
-        $CXO_prm = new PRM_MklAnj();
+        $CXO_prm = new PRM_Menu();
         $CXO = new LIB_BDD($CXO_prm);
         
         global $CXO_C;
@@ -80,7 +80,7 @@ abstract class AJX_MklAnj_Ajax {
 
 }
 
-class CLA_barre_navigation_Ajax extends AJX_MklAnj_Ajax {
+class CLA_barre_navigation_Ajax extends AJX_Ajax {
     protected function affiche($post) {
         $bn = new CLA_barre_navigation();
         
@@ -94,7 +94,7 @@ class CLA_barre_navigation_Ajax extends AJX_MklAnj_Ajax {
 /**
  * Classe pour gérer les onglets principaux
  */
-class CLA_onglet_Ajax extends AJX_MklAnj_Ajax {
+class CLA_onglet_Ajax extends AJX_Ajax {
 
     protected function home($post) {
         new CLA_onglet_home();
@@ -118,7 +118,7 @@ class CLA_onglet_Ajax extends AJX_MklAnj_Ajax {
 
 }
 
-class CLA_adm_init_base_Ajax extends AJX_MklAnj_Ajax {
+class CLA_adm_init_base_Ajax extends AJX_Ajax {
     protected function import_donnees($post) {
         $ib = new CLA_InitialisationBase();
         $crdu = $ib->importDonnees();
@@ -128,7 +128,7 @@ class CLA_adm_init_base_Ajax extends AJX_MklAnj_Ajax {
     
 }
 
-class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
+class CLA_gestion_administration_Ajax extends AJX_Ajax {
     protected function afficheAdministration($post) {
         $nom_administration = $post['nom_administration'];
         
@@ -150,7 +150,7 @@ class CLA_gestion_administration_Ajax extends AJX_MklAnj_Ajax {
 /**
  * Classe pour gérer le mode gestion des tables
  */
-class CLA_gestion_table_Ajax extends AJX_MklAnj_Ajax {
+class CLA_gestion_table_Ajax extends AJX_Ajax {
 
     protected function affiche_liste_tables($post) {
         $gt = new LIB_MenuTables();
@@ -282,7 +282,7 @@ class CLA_gestion_table_Ajax extends AJX_MklAnj_Ajax {
 
 }
 
-class CLA_initialisation_base_Ajax extends AJX_MklAnj_Ajax {
+class CLA_initialisation_base_Ajax extends AJX_Ajax {
     protected function affiche_bloc($post) {
 
         $ca = new CLA_InitialisationBase();
@@ -298,7 +298,7 @@ class CLA_initialisation_base_Ajax extends AJX_MklAnj_Ajax {
     }
 }
 
-class CLA_accueil_Ajax extends AJX_MklAnj_Ajax {
+class CLA_accueil_Ajax extends AJX_Ajax {
     protected function affiche($post) {
         $a = new CLA_Accueil();
         $a->affiche();
@@ -310,7 +310,7 @@ class CLA_accueil_Ajax extends AJX_MklAnj_Ajax {
     }
 }
     
-class CLA_acces_Ajax extends AJX_MklAnj_Ajax {
+class CLA_acces_Ajax extends AJX_Ajax {
     protected function affiche($post) {
         $a = new CLA_Acces();
         $a->affiche();
@@ -327,7 +327,7 @@ class CLA_acces_Ajax extends AJX_MklAnj_Ajax {
 
 }
     
-class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
+class CLA_liste_courses_Ajax extends AJX_Ajax {
     protected function affiche_vue_principale($post) {
         $a = new CLA_ListeCourses();
         $a->afficheVuePrincipale();
@@ -357,7 +357,7 @@ class CLA_liste_courses_Ajax extends AJX_MklAnj_Ajax {
     }
 }
 
-class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
+class CLA_gestion_liste_courses_Ajax extends AJX_Ajax {
     protected function change_etat_faite($post) {
         global $DOT;
         
@@ -473,7 +473,7 @@ class CLA_gestion_liste_courses_Ajax extends AJX_MklAnj_Ajax {
     }
 }
 
-class CLA_recherche_Ajax extends AJX_MklAnj_Ajax {
+class CLA_recherche_Ajax extends AJX_Ajax {
     protected function affiche($post) {
         $r = new CLA_Recherche();
         
@@ -483,7 +483,7 @@ class CLA_recherche_Ajax extends AJX_MklAnj_Ajax {
     }
 }
 
-class CLA_filtrage_Ajax extends AJX_MklAnj_Ajax {
+class CLA_filtrage_Ajax extends AJX_Ajax {
     protected function affiche($post) {
         $r = new CLA_Filtrage();
         
@@ -499,7 +499,7 @@ class CLA_filtrage_Ajax extends AJX_MklAnj_Ajax {
     }
 }
 
-class CLA_datation_Ajax extends AJX_MklAnj_Ajax {
+class CLA_datation_Ajax extends AJX_Ajax {
     protected function affiche_grille_jours($post) {
         $datation = $post['datation'];
         

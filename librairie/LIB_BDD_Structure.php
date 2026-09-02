@@ -35,7 +35,7 @@ class LIB_BDD_Structure extends LIB_BDD_MySQL_PDO {
             $hostname = 'localhost';
             $password = 'structure';
             $username = 'structure';
-            $this->schema = 'MklAnj';
+            $this->schema = 'Menu';
         }
         
         $this->db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));

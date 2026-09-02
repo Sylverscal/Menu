@@ -40,7 +40,7 @@ class PRM_Menu extends PRM_Base {
             $this->setParametres('Menu', 'dbs15734873', 'db5020579532.hosting-data.io', '>P1eTa&6XTiNe@ST_PieRRe<', 'dbu5155308');
         } else {
 
-            $this->setParametres('Menu', 'Menu', 'localhost:8889', 'Menu', 'Menu');
+            $this->setParametres('Menu', 'Menu', 'localhost:8889', 'menu', 'menu');
         }
     }
 }

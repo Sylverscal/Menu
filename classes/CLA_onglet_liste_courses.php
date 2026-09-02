@@ -14,7 +14,7 @@ class CLA_onglet_liste_courses extends CLA_onglet_principal {
      */
     #[\Override]
     final function affiche() {
-        $this->affiche_entete("Liste de courses");
+        $this->affiche_entete("Menu");
         
         $a = new CLA_ListeCourses();
         $a->afficheEmplacementFonctionListeCourses();

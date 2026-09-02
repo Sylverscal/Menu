@@ -16,7 +16,7 @@ class CLA_Acces {
     public function affiche() {
         ?>
         <div class="w3-container w3-deep-orange w3-center w3-block">
-            <h2>COURSES</h2>
+            <h2>MENU</h2>
         </div>
         <form id="FRM_ACCES" class="w3-container" action="index.htmls">
             <p>
