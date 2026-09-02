@@ -118,10 +118,10 @@ class CLA_onglet_Ajax extends AJX_Ajax {
 
 }
 
-class CLA_adm_init_base_Ajax extends AJX_Ajax {
+class CLA_crabouillage_general_Ajax extends AJX_Ajax {
     protected function import_donnees($post) {
         $ib = new CLA_InitialisationBase();
-        $crdu = $ib->importDonnees();
+        $crdu = $ib->crabouillageGeneral();
         
         $crdu->emissionJson();
     }
@@ -137,11 +137,6 @@ class CLA_gestion_administration_Ajax extends AJX_Ajax {
     
     private function INIT_BASE() {
         $o = new CLA_InitialisationBase();
-        $o->affiche_bloc();
-    }
-    
-    private function GESTION_REQUETES() {
-        $o = new CLA_GestionRequetes();
         $o->affiche_bloc();
     }
     

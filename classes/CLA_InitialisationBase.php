@@ -23,7 +23,6 @@ class CLA_InitialisationBase {
         ?>
             <div class="w3-container w3-light-blue">
                 <h2>Initialisation de la base</h2>
-                <h4>Aspiration des données de la base Courses</h4>
             </div>
         <?php
     }
@@ -31,7 +30,12 @@ class CLA_InitialisationBase {
     private function affiche_corps() {
         ?>
             <div class="w3-container w3-pale-blue">
-                <h3><button id="BTN_LANCE_IMPORT_DONNEES" class="w3-button">Import données</button></h3>
+                <h3><button class="w3-button w3-blue w3-block" id="BTN_LANCE_INITIALISATION_BASE" class="w3-button">Initialisation de la base</button></h3>
+                <div class="w3-panel w3-danger">
+                    <h4>DANGER !</h4>
+                    <img src="https://menu:8890/image/girophare.gif" class="w3-round" alt="AU SECOURS !"> 
+                    <p>Toutes les anciennes données vont être écrasées.</p>
+                </div>             
             </div>
         <?php
     }
@@ -41,48 +45,9 @@ class CLA_InitialisationBase {
      * @global LIB_BDD $CXO
      * @return LIB_CompteRendu Compte rendu
      */
-    public function importDonnees() {
-        $crdu = new LIB_CompteRendu(true, "");
+    public function crabouillageGeneral() {
         
-        $crdu = $this->importVille();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->importCommerce();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->importUnite();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->importMarque();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->importArticle();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->initialiseComptes();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->initialiseZones();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
-        
-        $crdu = $this->chargement_table_course();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
+        $crdu = new LIB_CompteRendu(true, "C'est du BSA extra piste");
         
         return $crdu;
     }

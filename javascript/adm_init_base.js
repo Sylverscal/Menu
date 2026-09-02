@@ -7,15 +7,15 @@ var g_adm_init_base;
 
 class C_adm_init_base {
     ecoute_objets_bloc_initialisation_base() {
-        $('#BTN_LANCE_IMPORT_DONNEES').click(function () {
-            g_adm_init_base.import_donnees();
+        $('BTN_LANCE_INITIALISATION_BASE').click(function () {
+            g_adm_init_base.crabouillage_general();
         });
     }
     
-    import_donnees() {
+    crabouillage_general() {
         var json = {
             domaine: 'adm_init_base',
-            action: 'import_donnees'
+            action: 'crabouillage_general'
         };
         $.ajax(
                 {
