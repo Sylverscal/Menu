@@ -33,9 +33,6 @@ abstract class AJX_Ajax {
         $CXO_prm = new PRM_Menu();
         $CXO = new LIB_BDD($CXO_prm);
         
-        global $CXO_C;
-        //$CXO_C = new LIB_BDD(new PRM_Courses());
-        
         global $CXO_ST;
         $CXO_ST = new LIB_BDD_Structure();
         

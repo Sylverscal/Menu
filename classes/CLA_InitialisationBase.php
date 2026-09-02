@@ -60,7 +60,6 @@ class CLA_InitialisationBase {
      */
     private function importVille() {
         global $CXO;
-        global $CXO_C;
         
         $crdu = new LIB_CompteRendu(true, "");
         
