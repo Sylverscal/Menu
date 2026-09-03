@@ -15,9 +15,9 @@ global $CXO_ST; // Pour accéder à la base "structure"
 global $CXO_C; // Pour accéder à la base "Courses"
 global $DOT;
 
-LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affiche_grille_jours' ? TRUE : FALSE);
+//LIB_Util::log("Entrée dans AJAX", $_POST['action']=='affiche_grille_jours' ? TRUE : FALSE);
 //LIB_Util::log("Entrée dans AJAX", $_POST['domaine']=='filtrage' ? TRUE : FALSE);
-//LIB_Util::log("Entrée dans AJAX",true);
+LIB_Util::log("Entrée dans AJAX",true);
 //LIB_Util::log("Entrée dans AJAX");
 
 LIB_Util::logPrintR($_POST,'POST');
@@ -115,8 +115,8 @@ class CLA_onglet_Ajax extends AJX_Ajax {
 
 }
 
-class CLA_crabouillage_general_Ajax extends AJX_Ajax {
-    protected function import_donnees($post) {
+class CLA_adm_init_base_Ajax extends AJX_Ajax {
+    protected function crabouillage_general($post) {
         $ib = new CLA_InitialisationBase();
         $crdu = $ib->crabouillageGeneral();
         

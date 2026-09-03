@@ -55,6 +55,12 @@ class CLA_InitialisationBase {
             return $crdu;
         }
         
+        $crdu = $this->remplissage();
+        
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
         return $crdu;
     }
     
@@ -63,8 +69,37 @@ class CLA_InitialisationBase {
      * @return LIB_CompteRendu Compte rendu
      */
     private function nettoyage() {
-        $crdu = $this->nettoyageTableIngredient();
+        $crdu = $this->nettoyageTable("IngredientPlat");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
         
+        $crdu = $this->nettoyageTable("RepasPlat");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->nettoyageTable("Plat");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->nettoyageTable("Repas");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->nettoyageTable("Moment");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->nettoyageTable("Ingredient");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->nettoyageTable("Unite");
         if ($crdu->isKo()) {
             return $crdu;
         }
@@ -77,15 +112,409 @@ class CLA_InitialisationBase {
      * @global LIB_BDD $CXO
      * @return LIB_CompteRendu Compte rendu
      */
-    private function nettoyageTableIngredient() {
+    private function nettoyageTable($table) {
         global $CXO;
         
-        $requete = "delete from Ingredient where id > 0";
+        $requete = "delete from $table where id > 0";
         
-        $rlt = $CXO->execute($requete);
+        $rlt = $CXO->executeRequete($requete);
         
         $crdu = $rlt->getCompteRendu();
         
+        return $crdu;
+    }
+    
+    /**
+     * 
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissage() {
+        $crdu = $this->remplissageTableIngredient();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->remplissageTableUnite();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->remplissageTableMoment();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->remplissageTablePlat();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->remplissageTableIngredientPlat();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->remplissageTableRepasPlat();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTableIngredient() {
+        global $DOT;
+        
+        $crdu = $this->creeElement("Ingredient", "Farine");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Oeuf");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Sucre");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Lait");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Eau");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Sel");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Levure chimique");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Ingredient", "Sucre vanillé");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTableMoment() {
+        global $DOT;
+        
+        $crdu = $this->creeElement("Moment", "Midi");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Moment", "Soir");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Moment", "Petit déjeuner");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Moment", "Goûter");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTableUnite() {
+        global $DOT;
+        
+        $crdu = $this->creeElement("Unite", "Pièce");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "cl");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "ml");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "l");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "kg");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "g");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "Sachet");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "Cuiller à soupe");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "Cuiller à café");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Unite", "Pincée");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTablePlat() {
+        global $DOT;
+        
+        $crdu = $this->creeElement("Plat", "Gaufre moelleuse");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Frites");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Courgettes rondes avec chorizo et fromage");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Pizza aux miettes de poulet");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Melon jambon");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Soupe de Printemps");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Travers de porc avec pommes de terre");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Travers de porc et légumes");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Poisson et riz et légumes");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Salade de concombre et tomate au yaourt");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Sardines + Pommes de terre + Salade");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Pâtes aux légumes");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Tagliatelles de Sarrazin + Truite fumée");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Crêpes + Salade");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Omelette + Salade");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Tarte de pommes de terre");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Gaufre salée");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = $this->creeElement("Plat", "Rouleau de courgettes + Feta + Tomate");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+                
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTableIngredientPlat() {
+        global $DOT;
+        
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Farine",300,"g");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Oeuf",1,"Pièce");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Sucre",60,"g");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Beurre",75,"g");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+                
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Lait",150,"ml");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Eau",150,"ml");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Sel",1,"Cuiller à café");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Levure chimique",1,"Sachet");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $c = $DOT->getObjet("IngredientPlat");
+        $c->set("Gaufre moelleuse","Sucre vanillé",1,"Sachet");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function remplissageTableRepasPlat() {
+        global $DOT;
+        
+        $c = $DOT->getObjet("RepasPlat");
+        $c->set("Gaufre moelleuse","04-09-2026","Goûter");
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $crdu = new LIB_CompteRendu(true, "");
+        return $crdu;
+    }
+    
+    /**
+     * @global LIB_DistributeurObjetTable $DOT
+     * @return LIB_CompteRendu Compte rendu
+     */
+    private function creeElement($table,$valeur) {
+        global $DOT;
+
+        $c = $DOT->getObjet($table);
+        $c->set($valeur);
+        $crdu = $c->sauve();
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = new LIB_CompteRendu(true, "");
         return $crdu;
     }
     
