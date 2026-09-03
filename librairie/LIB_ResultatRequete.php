@@ -166,7 +166,7 @@ class LIB_ResultatRequete {
     
     /**
      * Renvoie le comte rendu de l'opération à renvoyer en surface
-     * @return type
+     * @return LIB_CompteRendu
      */
     public function getCompteRendu() {
         $crdu = new LIB_CompteRendu($this->isOk(),$this->getResumeErreur(),$this->getDetailErreur());

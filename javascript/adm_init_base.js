@@ -7,7 +7,7 @@ var g_adm_init_base;
 
 class C_adm_init_base {
     ecoute_objets_bloc_initialisation_base() {
-        $('BTN_LANCE_INITIALISATION_BASE').click(function () {
+        $('#BTN_LANCE_INITIALISATION_BASE').click(function () {
             g_adm_init_base.crabouillage_general();
         });
     }

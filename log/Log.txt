@@ -2727,3 +2727,2708 @@
     [nom_administration] => INIT_BASE
 )
 
+02-09-2026 18:58:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 18:58:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 18:58:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 18:58:33 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 18:58:33 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => acces
+                                    [action] => affiche
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:39 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:39 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 19:00:39 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:39 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => acces
+                                    [action] => affiche
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+02-09-2026 19:00:48 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:48 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => acces
+                                    [action] => controle
+                                    [donnees] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => username
+                                                    [value] => 
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => password
+                                                    [value] => 
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:48 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+02-09-2026 19:00:48 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:48 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => accueil
+                                    [action] => affiche
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => accueil
+                                    [action] => affiche_accueil_courses
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+02-09-2026 19:00:49 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => barre_navigation
+                                    [action] => affiche
+                                    [onglet] => COU_onglet_home
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:49 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => onglet
+                                    [action] => home
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+02-09-2026 19:00:51 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+02-09-2026 19:00:51 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:51 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:00:51 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => onglet
+                                    [action] => tables
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:00:51 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => barre_navigation
+                                    [action] => affiche
+                                    [onglet] => CLA_onglet_tables
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 19:05:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 19:05:28 : ? -> ? -> ? -> 0 : POST
+02-09-2026 19:05:28 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 19:05:28 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : Erreur connexion base : H = 'localhost:8889' , DB = 'Menu' , UN = 'menu', PW = 'menu'
+02-09-2026 19:05:28 : LIB_BDD_MySQL_PDO -> LIB_BDD_MySQL_PDO -> ouvre -> 18 : PDOException Object
+(
+    [message:protected] => SQLSTATE[HY000] [1045] Access denied for user 'menu'@'localhost' (using password: YES)
+    [string:Exception:private] => 
+    [code:protected] => 1045
+    [file:protected] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+    [line:protected] => 16
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD_MySQL_PDO.php
+                    [line] => 16
+                    [function] => __construct
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => mysql:host=localhost:8889;dbname=Menu
+                            [1] => menu
+                            [2] => SensitiveParameterValue Object
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/librairie/LIB_BDD.php
+                    [line] => 18
+                    [function] => ouvre
+                    [class] => LIB_BDD_MySQL_PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 34
+                    [function] => __construct
+                    [class] => LIB_BDD
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => PRM_Menu Object
+                                (
+                                    [schema:PRM_Base:private] => Menu
+                                    [database:PRM_Base:private] => Menu
+                                    [hostname:PRM_Base:private] => localhost:8889
+                                    [username:PRM_Base:private] => menu
+                                    [password:PRM_Base:private] => menu
+                                    [is_distant:PRM_Base:private] => 
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/veroscal/Documents/Programmation/NetBeansProjects/Menu/ajax/ajax.php
+                    [line] => 27
+                    [function] => __construct
+                    [class] => AJX_Ajax
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [domaine] => acces
+                                    [action] => affiche
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => HY000
+            [1] => 1045
+            [2] => Access denied for user 'menu'@'localhost' (using password: YES)
+        )
+
+)
+
+02-09-2026 20:05:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:05:44 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:05:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => CLA_onglet_tables
+)
+
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:38 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => tables
+)
+
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Repas
+)
+
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Repas
+)
+
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Unite
+)
+
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:07:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:08:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Unite
+    [id] => 0
+)
+
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Unite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => cl
+                )
+
+        )
+
+)
+
+02-09-2026 20:08:15 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:08:15 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:15 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:08:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Unite
+    [id] => 0
+)
+
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Unite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Cuiller à café
+                )
+
+        )
+
+)
+
+02-09-2026 20:08:44 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:08:44 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:08:48 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:08:48 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:08:48 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Unite
+    [id] => 2
+)
+
+02-09-2026 20:09:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:09:19 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:09:19 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteModification
+    [nom_table] => Unite
+    [id] => 2
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Cuiller à soupe
+                )
+
+        )
+
+)
+
+02-09-2026 20:09:19 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:09:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:09:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:09:27 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:09:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:09:30 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:09:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Ingredient
+    [id] => 0
+)
+
+02-09-2026 20:10:41 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:10:41 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:10:41 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:10:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:10:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:10:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:10:44 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:10:44 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:10:44 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Plat
+    [id] => 0
+)
+
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Plat
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Frites
+                )
+
+        )
+
+)
+
+02-09-2026 20:10:56 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:10:56 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:10:56 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:11:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Ingredient
+    [id] => 0
+)
+
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Ingredient
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Pomme de terre
+                )
+
+        )
+
+)
+
+02-09-2026 20:11:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:11:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Moment
+)
+
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Moment
+)
+
+02-09-2026 20:11:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:22 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Moment
+    [id] => 0
+)
+
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Moment
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Midi
+                )
+
+        )
+
+)
+
+02-09-2026 20:11:28 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:11:28 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:28 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Moment
+)
+
+02-09-2026 20:11:29 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:29 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:29 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Moment
+    [id] => 0
+)
+
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Moment
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Soir
+                )
+
+        )
+
+)
+
+02-09-2026 20:11:36 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:11:36 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:11:36 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Moment
+)
+
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:12:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:12:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:12:42 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:12:42 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:12:42 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => IngredientPlat
+    [id] => 0
+)
+
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Unite
+)
+
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:13:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:05 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Unite
+    [id] => 0
+)
+
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Unite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Pièces
+                )
+
+        )
+
+)
+
+02-09-2026 20:13:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:13:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:17 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:13:22 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:22 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:22 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => IngredientPlat
+    [id] => 0
+)
+
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => IngredientPlat
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id_Plat
+                    [value] => 1
+                )
+
+            [1] => Array
+                (
+                    [name] => id_Ingredient
+                    [value] => 1
+                )
+
+            [2] => Array
+                (
+                    [name] => quantite
+                    [value] => 6
+                )
+
+            [3] => Array
+                (
+                    [name] => id_Unite
+                    [value] => 3
+                )
+
+        )
+
+)
+
+02-09-2026 20:13:43 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:13:43 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:43 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:50 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:13:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Repas
+)
+
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Repas
+)
+
+02-09-2026 20:14:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:03 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Repas
+    [id] => 0
+)
+
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Repas
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => datation
+                    [value] => 10-09-2026
+                )
+
+            [1] => Array
+                (
+                    [name] => id_Moment
+                    [value] => 2
+                )
+
+        )
+
+)
+
+02-09-2026 20:14:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:14:12 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:12 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Repas
+)
+
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:13 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:14:14 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:14 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:14 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => RepasPlat
+    [id] => 0
+)
+
+02-09-2026 20:14:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => RepasPlat
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => id_Repas
+                    [value] => 1
+                )
+
+            [1] => Array
+                (
+                    [name] => id_Plat
+                    [value] => 1
+                )
+
+        )
+
+)
+
+02-09-2026 20:14:21 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:14:21 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:14:21 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:21 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:21 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Plat
+)
+
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:38 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Plat
+)
+
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:14:45 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:15:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Unite
+)
+
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:02 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:07 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Ingredient
+)
+
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:09 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:16:15 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:16 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Unite
+)
+
+02-09-2026 20:16:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:16 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:16:23 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:23 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:23 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => Unite
+    [id] => 0
+)
+
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => traiteAjout
+    [nom_table] => Unite
+    [id] => 0
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => nom
+                    [value] => Pincée
+                )
+
+        )
+
+)
+
+02-09-2026 20:16:32 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : 
+02-09-2026 20:16:32 : LIB_Table_s -> LIB_Table_s -> ajouteElement -> 234 : LIB_CompteRendu Object
+(
+    [is_ok:LIB_CompteRendu:private] => 1
+    [resume:LIB_CompteRendu:private] => 
+    [detail:LIB_CompteRendu:private] => 
+    [colonne:LIB_CompteRendu:private] => 
+    [tableau:LIB_CompteRendu:private] => 
+    [json:LIB_CompteRendu:private] => 
+)
+
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:32 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Unite
+)
+
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => Repas
+)
+
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:37 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => Repas
+)
+
+02-09-2026 20:16:39 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:39 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:39 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:16:40 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:16:40 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:16:40 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:34:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:00 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:34:01 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:01 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:01 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => RepasPlat
+)
+
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:34:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:16 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:16 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheEdition
+    [nom_table] => IngredientPlat
+    [id] => 1
+)
+
+02-09-2026 20:34:20 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:34:20 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:34:20 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTitre
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_table
+    [action] => afficheTable
+    [nom_table] => IngredientPlat
+)
+
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+02-09-2026 20:47:50 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:50 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:50 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:52 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:53 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+02-09-2026 20:47:54 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+02-09-2026 20:47:55 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:47:55 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:47:55 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+02-09-2026 20:57:04 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:04 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:04 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:05 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:06 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:08 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+02-09-2026 20:57:10 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:10 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:10 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+02-09-2026 20:57:57 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:57 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:57 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:58 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:57:59 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:58:00 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+02-09-2026 20:58:03 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:58:03 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:58:03 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+02-09-2026 20:59:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:30 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:30 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => affiche
+)
+
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => acces
+    [action] => controle
+    [donnees] => Array
+        (
+            [0] => Array
+                (
+                    [name] => username
+                    [value] => 
+                )
+
+            [1] => Array
+                (
+                    [name] => password
+                    [value] => 
+                )
+
+        )
+
+)
+
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:31 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche
+)
+
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => accueil
+    [action] => affiche_accueil_courses
+)
+
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => home
+)
+
+02-09-2026 20:59:33 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_home
+)
+
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => barre_navigation
+    [action] => affiche
+    [onglet] => COU_onglet_administration
+)
+
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:34 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => onglet
+    [action] => administration
+)
+
+02-09-2026 20:59:35 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:35 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:35 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => gestion_administration
+    [action] => afficheAdministration
+    [nom_administration] => INIT_BASE
+)
+
+02-09-2026 20:59:36 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:36 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:36 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => adm_init_base
+    [action] => crabouillage_general
+)
+
+02-09-2026 20:59:46 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+02-09-2026 20:59:46 : ? -> ? -> ? -> 0 : POST
+02-09-2026 20:59:46 : ? -> ? -> ? -> 0 : Array
+(
+    [domaine] => adm_init_base
+    [action] => crabouillage_general
+)
+
