@@ -26,13 +26,13 @@ class C_adm_init_base {
                     success: function (data) {
                         if (data.erreur === "non") {
                             $('#COU_MODAL_ERREUR_RESUME').html(data.erreur_resume);
-                            $('#COU_MODAL_TITRE').text("Compte rendu import données");
+                            $('#COU_MODAL_TITRE').text("Compte rendu crabouillage général");
                             $('#COU_MODAL_ACTION').text("Tout s'est bien passé");
                             g_adm_init_base.afficheErreurDetail(data.erreur_detail);
                             document.getElementById('COU_MODAL_ERREUR').style.display='block';
                         } else {
                             $('#COU_MODAL_ERREUR_RESUME').html(data.erreur_resume);
-                            $('#COU_MODAL_TITRE').text("Compte rendu import données");
+                            $('#COU_MODAL_TITRE').text("Compte rendu crabouillage général");
                             $('#COU_MODAL_ACTION').text("CRASH !!!");
                             g_adm_init_base.afficheErreurDetail(data.erreur_detail);
                             document.getElementById('COU_MODAL_ERREUR').style.display='block';
