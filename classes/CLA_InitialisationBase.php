@@ -313,92 +313,92 @@ class CLA_InitialisationBase {
     private function remplissageTablePlat() {
         global $DOT;
         
-        $crdu = $this->creeElement("Plat", "Gaufre moelleuse");
+        $crdu = $this->creeElement("Plat", "Gaufre moelleuse","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Frites");
+        $crdu = $this->creeElement("Plat", "Frites","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Courgettes rondes avec chorizo et fromage");
+        $crdu = $this->creeElement("Plat", "Courgettes rondes avec chorizo et fromage","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Pizza aux miettes de poulet");
+        $crdu = $this->creeElement("Plat", "Pizza aux miettes de poulet","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Melon jambon");
+        $crdu = $this->creeElement("Plat", "Melon jambon","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Soupe de Printemps");
+        $crdu = $this->creeElement("Plat", "Soupe de Printemps","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Travers de porc avec pommes de terre");
+        $crdu = $this->creeElement("Plat", "Travers de porc avec pommes de terre","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Travers de porc et légumes");
+        $crdu = $this->creeElement("Plat", "Travers de porc et légumes","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Poisson et riz et légumes");
+        $crdu = $this->creeElement("Plat", "Poisson et riz et légumes","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Salade de concombre et tomate au yaourt");
+        $crdu = $this->creeElement("Plat", "Salade de concombre et tomate au yaourt","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Sardines + Pommes de terre + Salade");
+        $crdu = $this->creeElement("Plat", "Sardines + Pommes de terre + Salade","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Pâtes aux légumes");
+        $crdu = $this->creeElement("Plat", "Pâtes aux légumes","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Tagliatelles de Sarrazin + Truite fumée");
+        $crdu = $this->creeElement("Plat", "Tagliatelles de Sarrazin + Truite fumée","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Crêpes + Salade");
+        $crdu = $this->creeElement("Plat", "Crêpes + Salade","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Omelette + Salade");
+        $crdu = $this->creeElement("Plat", "Omelette + Salade","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Tarte de pommes de terre");
+        $crdu = $this->creeElement("Plat", "Tarte de pommes de terre","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Gaufre salée");
+        $crdu = $this->creeElement("Plat", "Gaufre salée","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
                 
-        $crdu = $this->creeElement("Plat", "Rouleau de courgettes + Feta + Tomate");
+        $crdu = $this->creeElement("Plat", "Rouleau de courgettes + Feta + Tomate","-");
         if ($crdu->isKo()) {
             return $crdu;
         }
@@ -414,70 +414,56 @@ class CLA_InitialisationBase {
     private function remplissageTableIngredientPlat() {
         global $DOT;
         
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Farine",300,"g");
-        $crdu = $c->sauve();
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Farine",300,"g");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Oeuf",1,"Pièce");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Oeuf",1,"Pièce");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Sucre",60,"g");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Beurre",75,"g");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Beurre",75,"g");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Lait",150,"ml");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-                
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Lait",150,"ml");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Eau",150,"ml");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Eau",150,"ml");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Sel",1,"Cuiller à café");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Sel",1,"Cuiller à café");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Levure chimique",1,"Sachet");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Levure chimique",1,"Sachet");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Gaufre moelleuse","-","Sucre vanillé",1,"Sachet");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
-        $c = $DOT->getObjet("IngredientPlat");
-        $c->set("Gaufre moelleuse","Sucre vanillé",1,"Sachet");
-        $crdu = $c->sauve();
+        
+        $crdu = $this->creeElement("IngredientPlat", "Steak","-","Entrecôte",200,"g");
         if ($crdu->isKo()) {
             return $crdu;
         }
-
+        
+        $crdu = $this->creeElement("IngredientPlat", "Frites","-","Pomme de terre",3,"Pièce");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
         $crdu = new LIB_CompteRendu(true, "");
         return $crdu;
     }
@@ -489,9 +475,17 @@ class CLA_InitialisationBase {
     private function remplissageTableRepasPlat() {
         global $DOT;
         
-        $c = $DOT->getObjet("RepasPlat");
-        $c->set("Gaufre moelleuse","04-09-2026","Goûter");
-        $crdu = $c->sauve();
+        $crdu = $this->creeElement("RepasPlat","Gaufre moelleuse","-","04-09-2026","Goûter");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $crdu = $this->creeElement("RepasPlat","Steak","-","05-09-2026","Soir");
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+
+        $crdu = $this->creeElement("RepasPlat","Frites","-","05-09-2026","Soir");
         if ($crdu->isKo()) {
             return $crdu;
         }
@@ -504,11 +498,20 @@ class CLA_InitialisationBase {
      * @global LIB_DistributeurObjetTable $DOT
      * @return LIB_CompteRendu Compte rendu
      */
-    private function creeElement($table,$valeur) {
+    private function creeElement() {
         global $DOT;
+        
+        $args = func_get_args();
+        
+        if (func_num_args() <= 1) {
+            $crdu = new LIB_CompteRendu(false, "Pas assez de paramètres pour 'creeElement'");
+            return $crdu;
+        }
+        
+        $table = $args[0];
 
         $c = $DOT->getObjet($table);
-        $c->set($valeur);
+        $c->set(...array_slice($args,1));
         $crdu = $c->sauve();
         if ($crdu->isKo()) {
             return $crdu;

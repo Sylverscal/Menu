@@ -1,9 +1,9 @@
-03-09-2026 17:59:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-03-09-2026 17:59:30 : ? -> ? -> ? -> 0 : POST
-03-09-2026 17:59:30 : ? -> ? -> ? -> 0 : Array
+04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : POST
+04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_table
     [action] => afficheTable
-    [nom_table] => Ingredient
+    [nom_table] => Plat
 )
 

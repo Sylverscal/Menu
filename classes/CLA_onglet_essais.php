@@ -32,7 +32,27 @@ class CLA_onglet_essais extends CLA_onglet_principal {
         global $CXO_ST;
         global $DOT;
         
+        $this->fonction("Foo","Gasp","Arf","Ourgl","Ventre saint gris","Scrongeugneu");
+        
         
         return;
+    }
+    
+    private function fonction($p1,$arguments) {
+        $args = func_get_args();
+        
+        print_r($args);
+        
+        if (func_num_args() > 1) {
+            $psansp1 = array_slice($args, 1);
+            
+            $this->deuxiemeFonction(...$psansp1);
+        }
+    }
+    
+    private function deuxiemeFonction($parametres) {
+        $args = func_get_args();
+        
+        print_r($args);
     }
 }
