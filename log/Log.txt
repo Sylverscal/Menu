@@ -1,9 +1,9 @@
-04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : Entrée dans AJAX
-04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : POST
-04-09-2026 06:53:16 : ? -> ? -> ? -> 0 : Array
+08-09-2026 14:22:30 : ? -> ? -> ? -> 0 : Entrée dans AJAX
+08-09-2026 14:22:30 : ? -> ? -> ? -> 0 : POST
+08-09-2026 14:22:30 : ? -> ? -> ? -> 0 : Array
 (
     [domaine] => gestion_table
     [action] => afficheTable
-    [nom_table] => Plat
+    [nom_table] => Unite
 )
 

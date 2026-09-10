@@ -139,10 +139,10 @@ class CLA_InitialisationBase {
             return $crdu;
         }
         
-        $crdu = $this->remplissageTableMoment();
-        if ($crdu->isKo()) {
-            return $crdu;
-        }
+//        $crdu = $this->remplissageTableMoment();
+//        if ($crdu->isKo()) {
+//            return $crdu;
+//        }
         
         $crdu = $this->remplissageTablePlat();
         if ($crdu->isKo()) {
@@ -221,22 +221,27 @@ class CLA_InitialisationBase {
     private function remplissageTableMoment() {
         global $DOT;
         
-        $crdu = $this->creeElement("Moment", "Midi");
+        $crdu = $this->creeElement("Moment", "Midi",12);
         if ($crdu->isKo()) {
             return $crdu;
         }
         
-        $crdu = $this->creeElement("Moment", "Soir");
+        $crdu = $this->creeElement("Moment", "Soir",20);
         if ($crdu->isKo()) {
             return $crdu;
         }
         
-        $crdu = $this->creeElement("Moment", "Petit déjeuner");
+        $crdu = $this->creeElement("Moment", "Petit déjeuner",8);
         if ($crdu->isKo()) {
             return $crdu;
         }
         
-        $crdu = $this->creeElement("Moment", "Goûter");
+        $crdu = $this->creeElement("Moment", "Goûter",16);
+        if ($crdu->isKo()) {
+            return $crdu;
+        }
+        
+        $crdu = $this->creeElement("Moment", "Brunch",14);
         if ($crdu->isKo()) {
             return $crdu;
         }
@@ -475,17 +480,17 @@ class CLA_InitialisationBase {
     private function remplissageTableRepasPlat() {
         global $DOT;
         
-        $crdu = $this->creeElement("RepasPlat","Gaufre moelleuse","-","04-09-2026","Goûter");
+        $crdu = $this->creeElement("RepasPlat","Gaufre moelleuse","-","04-09-2026","Goûter",16,30);
         if ($crdu->isKo()) {
             return $crdu;
         }
 
-        $crdu = $this->creeElement("RepasPlat","Steak","-","05-09-2026","Soir");
+        $crdu = $this->creeElement("RepasPlat","Steak","-","05-09-2026","Soir",20,3);
         if ($crdu->isKo()) {
             return $crdu;
         }
 
-        $crdu = $this->creeElement("RepasPlat","Frites","-","05-09-2026","Soir");
+        $crdu = $this->creeElement("RepasPlat","Frites","-","05-09-2026","Soir",20,1);
         if ($crdu->isKo()) {
             return $crdu;
         }
